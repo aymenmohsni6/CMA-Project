@@ -1,37 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+	<title>Restaurant Website</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="calculator-grid">
-        <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
-        </div>
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete>DEL</button>
-        <button data-operation>/</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>-</button>
-        <button data-number>.</button>
-        <button data-number>0</button>
-        <button data-equals class="span-two">=</button>
-    </div>
+	
+	<!-- navbar section starts here -->	
+	<section class="navbar">
+		<div class="container" style="background-color: #ececec;">
+			<div class="logo">
+				Name
+			</div>
+
+			<div class="menu text-right">
+				<ul>
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">Food</a>
+					</li>
+					<li>
+						<a href="">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- navbar section ends here -->	
+
+	<!-- food search section starts here -->	
+	<section class="food-search text-center" >
+		<div class="container" >
+			<h1>food search</h1>
+
+			<form action="">
+				<input type="search" name="search" placeholder="Search for food.." style="border:1px solid black">
+				<input type="submit" name="submit" value="Search" class="btn btn-primary">
+			</form>
+		</div>
+	</section>
+	<!-- food search section ends here -->	
+
+	<!-- categories section starts here -->	
+	<section class="categories">
+		<div class="container" style="height: 400px">
+			<h2 class="text-center">categories</h2>
+			
+			<div class="box-3 float-container">
+				<img src="images/pizza1.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
+				<h3 class="float-text text-white">Pizza</h3>
+			</div>
+			<div class="box-3 float-container">
+				<img src="images/burger.jpg" alt="burger" class="img-responsive img-curve" style="width: 300px;height: 300px">
+				<h3 class="float-text text-white">Burger</h3>
+			</div>
+			<div class="box-3 float-container">
+				<img src="images/mlewi.jpg" alt="mlewi" class="img-responsive img-curve" style="width: 300px;height: 300px">
+				<h3 class="float-text text-white">Mlewi</h3>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	<!-- categories section ends here -->	
+
+	<!-- food menu section starts here -->	
+	<section class="food-menu" style="background-color: #ececec;">
+		<div class="container" style="height: 910px;background-color: #ececec;margin-top: -40px">
+			<h2 class="text-center">Explore food</h2>
+
+			<div class="food-menu-box">
+				<div class="food-menu-img">
+					
+				</div>
+				<div class="food-menu-desc">
+					<img src="images/mlewi.jpg" alt="mlewi" class="img-responsive img-curve" style="width: 300px;height: 300px">
+					<h4>Food Title</h4>
+					<p>2.3dt</p>
+					<p>feha haka w haka w haka</p>
+					<br>
+					<a href="" class="btn btn-primary">Order Now</a>
+				</div>
+			</div>
+			<div class="food-menu-box">
+				<img src="images/burger.jpg" alt="burger" class="img-responsive img-curve" style="width: 300px;height: 300px">
+					<h4>Food Title</h4>
+					<p>2.3dt</p>
+					<p>feha haka w haka w haka</p>
+					<br>
+					<a href="" class="btn btn-primary">Order Now</a>
+			</div>
+			<div class="food-menu-box">
+				<img src="images/pizza1.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
+					<h4>Food Title</h4>
+					<p>2.3dt</p>
+					<p>feha haka w haka w haka</p>
+					<br>
+					<a href="" class="btn btn-primary">Order Now</a>
+			</div>
+			<div class="food-menu-box">
+				<img src="images/pizza1.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
+					<h4>Food Title</h4>
+					<p>2.3dt</p>
+					<p>feha haka w haka w haka</p>
+					<br>
+					<a href="" class="btn btn-primary">Order Now</a>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	<!-- food menu section ends here -->
+
+	<!-- social section starts here -->	
+	<section class="social">
+		<div class="container text-center">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/aymen.mohsni06/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/anass.amiri/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- social section ends here -->
+
+	<!-- footer section starts here -->	
+	<section class="footer">
+		<div class="container">
+			<p class="text-center">All rights reserved, designed by <a href="https://www.facebook.com/aymen.mohsni06/">Aymen</a> and <a href="https://www.facebook.com/anass.amiri.00"> Anass</a></p>
+		</div>
+	</section>
+	<!-- footer section ends here -->
 </body>
 </html>
