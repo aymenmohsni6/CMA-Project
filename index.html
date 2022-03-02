@@ -1,176 +1,1169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Restaurant Website</title>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- jquery -->
+    <link rel="stylesheet" href="css/jquery.mmenu.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/medailles.css">
+    <title>CMA</title>
 </head>
+
 <body>
-	
-	<!-- navbar section starts here -->	
-	<section class="navbar">
-		<div class="container" style="background-color: #ececec;">
-			<div class="logo">
-				Name
-			</div>
+    <!-- **********************************************header********************************************************** -->
 
-			<div class="menu text-right">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="team.html">Team</a>
-					</li>
-					<li>
-						<a href="">Food</a>
-					</li>
-					<li>
-						<a href="">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<!-- navbar section ends here -->	
+    <!-- *************
+    ***  header images ****
+   ****************-->
+    <div class="header_img" id="header_img">
+        <!-- <div class="logo"></div> -->
+        <blockquote contenteditable="true">
+            <q>l'olivier, est sûrement le cadeau &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; le plus riche du
+                ciel
+            </q>
+            <cite>Thomas Jefferson</cite>
+        </blockquote>
+        <!-- <a href="#navbar">
+      <img src="img/olive.png" class="pic-header">
+    </a> -->
+    </div>
 
-	<!-- food search section starts here -->	
-	<section class="food-search text-center" >
-		<div class="container" >
-			<h1>food search</h1>
+    <!-- *************
+    ***  header menu ****
+   ****************-->
+    <header class="header-part">
+        <div id="home" class="wrapper">
+            <div class="nav navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <a href="#menu">
+                            <button type="button" data-effect="st-effect-1" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </a>
+                        <!-- <a class="navbar-brand" href="index.html"><img src="resultat/logo20.png" class="logoMenu" alt="awslab"></a> -->
+                    </div>
+                    <!-- timeline menu -->
+                    <div id="navbar-timeline" class="navbar-collapse collapse pull-left hidden-xs">
+                        <ul class="nav navbar-nav navbar-left timeline-menu">
+                            <li class="timeline-li return-menu">
+                                <!-- <a href="#" id="return-menu"><i class="fas fa-arrow-left"></i></a> -->
+                                <i class="fas fa-arrow-left" id="return-menu"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse pull-right hidden-xs">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a class="page-scroll drop dropdown-toggle active_menu" data-toggle="dropdown" role="button" aria-expanded="false" href="index.html">Medailles</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#news" class="page-scroll">Actualité</a>
+                                    </li>
+                                    <li>
+                                        <a href="#events" class="page-scroll">Evenement</a>
+                                    </li>
+                                    <li>
+                                        <a href="#medailles-ID" class="page-scroll">Medailles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" class="page-scroll">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="olive-huile.html">Olive Et Huile</a>
+                            </li>
 
-			<form action="">
-				<input type="search" name="search" placeholder="Search for food.." style="border:1px solid black">
-				<input type="submit" name="submit" value="Search" class="btn btn-primary">
-			</form>
-		</div>
-	</section>
-	<!-- food search section ends here -->	
+                            <li>
+                                <a class="page-scroll" href="pro-stat.html">Production Et Statestique</a>
+                            </li>
 
-	<!-- categories section starts here -->	
-	<section class="categories">
-		<div class="container" style="height: 400px">
-			<h2 class="text-center">categories</h2>
-			
-			<div class="box-3 float-container">
-				<img src="images/pizza1.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-				<h3 class="float-text text-white">Pizza</h3>
-			</div>
-			<div class="box-3 float-container">
-				<img src="images/burger.jpg" alt="burger" class="img-responsive img-curve" style="width: 300px;height: 300px">
-				<h3 class="float-text text-white">Burger</h3>
-			</div>
-			<div class="box-3 float-container">
-				<img src="images/mlewi.jpg" alt="mlewi" class="img-responsive img-curve" style="width: 300px;height: 300px">
-				<h3 class="float-text text-white">Mlewi</h3>
-			</div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- *************
+    *** menu respon ****
+   ****************-->
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="#">Acceuil</a>
+                <ul>
+                    <li>
+                        <a href="#about" class="page-scroll">Qui Somme Nous</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="page-scroll">Nos Services</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="page-scroll">Nos Membres</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="page-scroll">Contact</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#about">Collection</a>
+            </li>
+            <li>
+                <a href="#blog">Arrive Bientot</a>
+                <ul>
+                    <li>
+                        <a href="blog-full-width.html">full width blog</a>
+                    </li>
+                    <li>
+                        <a href="blog-sidebar.html">sidebar blog</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="page-scroll" href="#contact">Inscription</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- **********************************************loading********************************************************** -->
+    <section class="">
+        <script src="https://loadingio.github.io/loading-bar/dist/loading-bar.js"></script>
 
-			<div class="clearfix"></div>
-		</div>
-	</section>
-	<!-- categories section ends here -->	
+        <div class="loading-part preload-background">
 
-	<!-- food menu section starts here -->	
-	<section class="food-menu" style="background-color: #ececec;">
-		<div class="container" style="height: 910px;background-color: #ececec;margin-top: -40px">
-			<h2 class="text-center">Explore food</h2>
+            <div class="loader-part">
 
-			<div class="food-menu-box">
-				<div class="food-menu-img">
-					
-				</div>
-				<div class="food-menu-desc">
-					<img src="images/mlewi.jpg" alt="mlewi" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-				</div>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/burger.jpg" alt="burger" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/pizza1.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/chapati.jpg" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/kafteji.png" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/frikase.jpg" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/ma9loub.jpg" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
-			<div class="food-menu-box">
-				<img src="images/falafel.jpg" alt="pizza" class="img-responsive img-curve" style="width: 300px;height: 300px">
-					<h4>Food Title</h4>
-					<p>2.3dt</p>
-					<p>feha haka w haka w haka</p>
-					<br>
-					<a href="" class="btn btn-primary">Order Now</a>
-			</div>
+                <center>
+                    <div class="ldBar" data-value="0" data-fill="data:ldbar/res,bubble(#9fa659,#efeeb6,50,1)" id="myItem1" data-fill-dir="btt"
+                        data-type="fill" data-path="M342.332,355.793l-8.16-24.047h-22.254v22.266c15.547,4.668,27.223,24.808,27.223,48.965
+                                c0,27.613-15.274,49.996-34.098,49.996c-18.84,0-34.113-22.383-34.113-49.996c0-24.43,11.976-44.696,27.793-49.055v-22.176h-22.848
+                                l-8.164,24.047C232.094,376.926,207,427.324,207,486.203c0,36.031,9.41,68.91,24.848,93.832
+                                c5.695,9.164,15.738,14.742,26.531,14.742h93.281c10.77,0,20.84-5.593,26.52-14.742c15.441-24.922,24.851-57.801,24.851-93.832
+                                C403.031,427.324,377.945,376.926,342.332,355.793L342.332,355.793z M284.84,222.434c-0.195,0.207-0.426,0.375-0.598,0.597
+                                c-2.801,3.5-3.851,8.094-2.84,12.496c6.344,27.442,5.801,55.946-1.457,83.024h50.149c-7.25-27.09-7.797-55.598-1.465-83.039
+                                c1.016-4.387-0.024-8.981-2.828-12.496c-0.153-0.223-0.391-0.375-0.582-0.582c4.902-1.934,8.383-6.661,8.383-12.239
+                                c-0.004-7.277-5.895-13.195-13.196-13.195h-30.765c-7.305,0-13.2,5.918-13.2,13.199C276.441,215.789,279.938,220.5,284.84,222.434
+                                L284.84,222.434z M292.961,373.621c0,6.836,5.539,12.375,12.363,12.375c6.828,0,12.367-5.539,12.367-12.375
+                                c0-4.351-2.375-7.996-5.773-10.203v5.734c0,3.66-2.949,6.606-6.594,6.606c-3.644,0-6.601-2.946-6.601-6.606v-5.734
+                                C295.336,365.625,292.961,369.27,292.961,373.621L292.961,373.621z"></div>
+                </center>
 
-			<div class="clearfix"></div>
-		</div>
-	</section>
-	<!-- food menu section ends here -->
+            </div>
 
-	<!-- social section starts here -->	
-	<section class="social">
-		<div class="container text-center">
-			<ul>
-				<li>
-					<a href="https://www.facebook.com/aymen.mohsni06/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" class="icon"/></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/anass.amiri/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" class="icon" /></a>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<!-- social section ends here -->
+        </div>
+    </section>
+    <!-- **********************************************Contenu********************************************************** -->
+    <section class="full-body">
+        <!-- *************
+    ***  news ****
+   ****************-->
+        <section>
+            <div id="titre-section">
+                <div class="container" id="news">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h2>Actualité</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fh5co-featured-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                            <span class="featured-grid" style="background-image: url(img/06.jpg);">
+                                <div class="desc">
+                                    <h3>15/2/2018</h3>
+                                    <span class="btn btn-primary btn-outline-photo with-arrow" type="button" data-toggle="modal" data-target="#News1">
+                                        Voir Plus
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                            <span class="featured-grid featured-grid-2" style="background-image: url(img/02.jpg);">
+                                <div class="desc">
+                                    <h3>15/2/2018</h3>
+                                    <span class="btn btn-primary btn-outline-photo with-arrow" type="button" data-toggle="modal" data-target="#News2">
+                                        Voir Plus
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </span>
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                                    <span class="featured-grid featured-grid-2" style="background-image: url(img/03.jpg);">
+                                        <div class="desc">
+                                            <h3>15/2/2018</h3>
+                                            <span class="btn btn-primary btn-outline-photo with-arrow" type="button" data-toggle="modal" data-target="#News3">
+                                                Voir Plus
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                                    <span class="featured-grid featured-grid-2" style="background-image: url(img/08.jpg);">
+                                        <div class="desc">
+                                            <h3>15/2/2018</h3>
+                                            <span class="btn btn-primary btn-outline-photo with-arrow" type="button" data-toggle="modal" data-target="#News4">
+                                                Voir Plus
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal 1-->
+        <div class="modal fade bd-example-modal-lg" id="News1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                        <h3 class="modal-title text-center" id="exampleModalLabel">Nouveauté 1</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="img/2.jpg">
+                                </div>
+                                <div class="col-md-5 ml-auto text-justify">
+                                    At Partner, we understand that all businesses are in different stages of development - that’s why we tailor all our services
+                                    to the pertinent needs of your businessAt Partner, we understand that all businesses
+                                    are in different stages of development - that’s why we tailor all our services to the
+                                    pertinent needs of your businessAt Partner, we understand that all businesses are in
+                                    different stages of development At Partner, we understand that all businesses are in
+                                    different stages of development - that’s why we tailor all our services to the pertinent
+                                    needs of your businessAt Partner, we understand that all businesses are in different
+                                    stages of development - that’s why we tailor all our services to the pertinent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-primary btn-outline-model with-arrow" type="button" data-dismiss="modal" data-target="#News3">
+                            Fermer
+                            <i class="fa fa-close"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="modal fade bd-example-modal-lg" id="News2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                        <h3 class="modal-title text-center" id="exampleModalLabel">Nouveauté 2</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="img/2.jpg">
+                                </div>
+                                <div class="col-md-5 ml-auto text-justify">
+                                    At Partner, we understand that all businesses are in different stages of development - that’s why we tailor all our services
+                                    to the pertinent needs of your businessAt Partner, we understand that all businesses
+                                    are in different stages of development - that’s why we tailor all our services to the
+                                    pertinent needs of your businessAt Partner, we understand that all businesses are in
+                                    different stages of development At Partner, we understand that all businesses are in
+                                    different stages of development - that’s why we tailor all our services to the pertinent
+                                    needs of your businessAt Partner, we understand that all businesses are in different
+                                    stages of development - that’s why we tailor all our services to the pertinent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-primary btn-outline-model with-arrow" type="button" data-dismiss="modal" data-target="#News3">
+                            Fermer
+                            <i class="fa fa-close"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="modal fade bd-example-modal-lg" id="News3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button> -->
+                        <h3 class="modal-title text-center" id="exampleModalLabel">Nouveauté 3</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="img/1.jpeg">
+                                </div>
+                                <div class="col-md-5 ml-auto text-justify">
+                                    At Partner, we understand that all businesses are in different stages of development - that’s why we tailor all our services
+                                    to the pertinent needs of your businessAt Partner, we understand that all businesses
+                                    are in different stages of development - that’s why we tailor all our services to the
+                                    pertinent needs of your businessAt Partner, we understand that all businesses are in
+                                    different stages of development At Partner, we understand that all businesses are in
+                                    different stages of development - that’s why we tailor all our services to the pertinent
+                                    needs of your businessAt Partner, we understand that all businesses are in different
+                                    stages of development - that’s why we tailor all our services to the pertinent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-primary btn-outline-model with-arrow" type="button" data-dismiss="modal" data-target="#News3">
+                            Fermer
+                            <i class="fa fa-close"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="modal fade bd-example-modal-lg" id="News4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                        <h3 class="modal-title text-center" id="exampleModalLabel">Nouveauté 4</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="img/3.jpeg">
+                                </div>
+                                <div class="col-md-5 ml-auto text-justify">
+                                    At Partner, we understand that all businesses are in different stages of development - that’s why we tailor all our services
+                                    to the pertinent needs of your businessAt Partner, we understand that all businesses
+                                    are in different stages of development - that’s why we tailor all our services to the
+                                    pertinent needs of your businessAt Partner, we understand that all businesses are in
+                                    different stages of development At Partner, we understand that all businesses are in
+                                    different stages of development - that’s why we tailor all our services to the pertinent
+                                    needs of your businessAt Partner, we understand that all businesses are in different
+                                    stages of development - that’s why we tailor all our services to the pertinent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-primary btn-outline-model with-arrow" type="button" data-dismiss="modal" data-target="#News3">
+                            Fermer
+                            <i class="fa fa-close"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!-- footer section starts here -->	
-	<section class="footer">
-		<div class="container">
-			<p class="text-center">All rights reserved, designed by <a href="https://www.facebook.com/aymen.mohsni06/">Aymen</a> and <a href="https://www.facebook.com/anass.amiri.00"> Anass</a></p>
-		</div>
-	</section>
-	<!-- footer section ends here -->
+        <!-- *************
+          *** Events ****
+         ****************-->
+        <section>
+            <div id="titre-section">
+                <div class="container" id="events">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h2>Evenement</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fh5co-blog-section" class="fh5co-grey-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-center" data-aos="flip-left" data-aos-duration="1500">
+                            <div class="blog-inner" id="blog-inner1">
+                                <a href="#">
+                                    <img class="img-responsive" src="img/04.jpg" alt="Blog">
+                                </a>
+                                <div class="desc">
+                                    <h3>
+                                        <a href="#">Evenement 1</a>
+                                    </h3>
+                                    <p id="Event-contenu1">Par sa tradition agricole associée à une politique de prospection , d'acclimatation et
+                                        d'amélioration des plantes, la tunisie est riche en ressources phytogénétiques...
+                                    </p>
+                                    <p id="More-event1" class="btn btn-primary btn-outline with-arrow">
+                                        Lire la suite
+                                        <i class="fas fa-arrow-down"></i>
+                                    </p>
+                                    <p id="less-event1" class="btn btn-primary btn-outline with-arrow">
+                                        Réduire
+                                        <i class="fas fa-arrow-up"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" data-aos="flip-up" data-aos-duration="1500">
+                            <div class="blog-inner" id="blog-inner2">
+                                <a href="#">
+                                    <img class="img-responsive" src="img/09.png" alt="Blog">
+                                </a>
+                                <div class="desc">
+                                    <h3>
+                                        <a href="#">Evenement 2</a>
+                                    </h3>
+                                    <p id="Event-contenu2">Quantité d’huile d’olive produite : 340 000 tonnes Quantité d’huile d’olive exportée
+                                        : 312 000 tonnes Quantité d’huile d’olive exportée en conditionnée : 20 000 tonnes
+                                        Valeur ...
+                                    </p>
+                                    <p id="More-event2" class="btn btn-primary btn-outline with-arrow">
+                                        Lire la suite
+                                        <i class="fas fa-arrow-down"></i>
+                                    </p>
+                                    <p id="less-event2" class="btn btn-primary btn-outline with-arrow">
+                                        Réduire
+                                        <i class="fas fa-arrow-up"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" data-aos="flip-right" data-aos-duration="1500">
+                            <div class="blog-inner" id="blog-inner3">
+                                <a href="#">
+                                    <img class="img-responsive" src="img/07.jpg" alt="Blog">
+                                </a>
+                                <div class="desc">
+                                    <h3>
+                                        <a href="#">Evenement 3</a>
+                                    </h3>
+                                    <p id="Event-contenu3">L'olive est étroitement liée aux traditions de la population méditerranéenne. Elle a
+                                        été cultivée durant 4500 ans dans la partie orientale du bassin méditerranéen....
+                                    </p>
+                                    <p id="More-event3" class="btn btn-primary btn-outline with-arrow">
+                                        Lire la suite
+                                        <i class="fas fa-arrow-down"></i>
+                                    </p>
+                                    <p id="less-event3" class="btn btn-primary btn-outline with-arrow">
+                                        Réduire
+                                        <i class="fas fa-arrow-up"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center" data-aos="zoom-in" data-aos-duration="1500">
+                            <a href="#contact" class="btn btn-primary btn-outline with-arrow" id="participer-event">
+                                Participer
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************
+*** Medailles ****
+****************-->
+        <div id="titre-section">
+            <div class="container" id="medailles-ID">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2>Nos Médailles</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="Medailles">
+            <div class="container">
+                <!-- <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="text-description">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates magni dolorem maxime ullam, tempore voluptatem! Culpa laborum dolore iusto numquam ducimus explicabo tempore dolores sed. Voluptatum autem quisquam molestiae!</h3>
+                </div>
+            </div> -->
+                <div class="row">
+                    <div class="col-lg-12 timeline-contenu">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image timeline-2013-2018">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2013-2018</h4>
+                                        <h4 class="subheading">Nos Medailles (40)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image timeline-2013">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2013</h4>
+                                        <h4 class="subheading">Nos Medailles (20)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image timeline-2014">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline3.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2014</h4>
+                                        <h4 class="subheading">Nos Medailles (15)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image timeline-2015">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2015</h4>
+                                        <h4 class="subheading">Nos Medailles (10)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image timeline-2016">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2016</h4>
+                                        <h4 class="subheading">Nos Medailles (40)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image timeline-2017">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/timeline3.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="timeline-heading">
+                                        <h4 class="date-timeline">2017</h4>
+                                        <h4 class="subheading">Nos Medailles (20)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                            sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+                                            sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <a href="#contact">
+                                    <div class="timeline-image">
+                                        <h4>Participer
+                                            <br>au prochaine
+                                            <br>Evenement</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- medailles 2013-2018 -->
+        <div class="container" id="medailles-2013_2018">
+            <!-- Concours -->
+            <div class="Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="Concours-prix">
+                                            <li class="row gold titre-li">
+                                                <div class="col-md-8">
+                                                    <h3>Nom du gagnant ou Du Huile</h3>
+                                                    3 médailles d’or pour SAS Virant – Moulin château Virant Lorem ipsum dolor sit, amet consectetur adipisicing elit. In recusandae
+                                                    consequuntur commodi porro aliquam iste hic quisquam.
+                                                </div>
+                                                <div class="col-md-4 award">
+                                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                        <!-- Indicators -->
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                        </ol>
+                                                        <!-- Wrapper for slides -->
+                                                        <div class="carousel-inner">
+                                                            <div class="item active">
+                                                                <img src="img/2.jpg" class="medailles-img">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="img/1.jpeg" class="medailles-img">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="img/3.jpeg" class="medailles-img">
+                                                            </div>
+                                                        </div>
+                                                        <!-- Left and right controls -->
+                                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row silver titre-li">
+                                                <div class="col-md-8">
+                                                    <h3>Nom du gagnant ou Du Huile</h3>
+                                                    3 médailles d’or pour SAS Virant – Moulin château Virant Lorem ipsum dolor sit, amet consectetur adipisicing elit. In recusandae
+                                                    consequuntur commodi porro aliquam iste hic quisquam.
+                                                </div>
+                                                <div class="col-md-4 award">
+                                                    <center>
+                                                        <img src="img/gold.png" class="img-award">
+                                                    </center>
+                                                </div>
+                                            </li>
+                                            <li class="row bronze titre-li">
+                                                <div class="col-md-8">
+                                                    <h3>Nom du gagnant ou Du Huile</h3>
+                                                    3 médailles d’or pour SAS Virant – Moulin château Virant Lorem ipsum dolor sit, amet consectetur adipisicing elit. In recusandae
+                                                    consequuntur commodi porro aliquam iste hic quisquam.
+                                                </div>
+                                                <div class="col-md-4 award">
+                                                    <center>
+                                                        <img src="img/gold.png" class="img-award">
+                                                    </center>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            3 médailles d’or pour SAS Virant – Moulin château Virant
+                                            <br>1 médaille d’or pour SCEA château Virant – producteur
+                                            <br>1 médaille d’argent pour SCEA château Virant – producteur
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-finale">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- medailles 2013 -->
+        <div class="container" id="medailles-2013">
+
+            <!-- Concours -->
+            <div class="container Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="headingEleven">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseEleven" class="collapse " aria-labelledby="headingEleven" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <a href="https://drive.google.com/file/d/1QILNpMhWLnPU7JBXLYWuAfcPBi3zF8v7/view?usp=drive_open">Concours2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- medailles 2014-->
+        <div class="container" id="medailles-2014">
+
+            <!-- Concours -->
+            <div class="container Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <a href="https://drive.google.com/file/d/1QILNpMhWLnPU7JBXLYWuAfcPBi3zF8v7/view?usp=drive_open">Concours2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- medailles 2015 -->
+        <div class="container" id="medailles-2015">
+
+            <!-- Concours -->
+            <div class="container Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <a href="https://drive.google.com/file/d/1QILNpMhWLnPU7JBXLYWuAfcPBi3zF8v7/view?usp=drive_open">Concours2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- medailles 2016 -->
+        <div class="container" id="medailles-2016">
+
+            <!-- Concours -->
+            <div class="container Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <a href="https://drive.google.com/file/d/1QILNpMhWLnPU7JBXLYWuAfcPBi3zF8v7/view?usp=drive_open">Concours2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- medailles 2017-->
+        <div class="container" id="medailles-2017">
+
+            <!-- Concours -->
+            <div class="container Concours">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link LMD" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Concours 1
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <a href="https://drive.google.com/file/d/1apUV5Fd5ysbbUo-OISfoDeNwdf-Hr9Fa/view?usp=drive_open">Concours1</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link collapsed LMD" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Concours 2
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <a href="https://drive.google.com/file/d/1QILNpMhWLnPU7JBXLYWuAfcPBi3zF8v7/view?usp=drive_open">Concours2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+    <!-- **********************************************Footer********************************************************** -->
+    <!-- contact -->
+    <section id="contact" class="contact-wrapper section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="wow zoomIn col-xs-12 text-center p-padding">
+                    <h1 class="section-title">Rester En Contact</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan venenatis lectus sed sollicitudin.
+                        Duis in odio ex. Sed elementum varius enim. In vel tincidunt lorem. Donec gravida felis vitae ipsum
+                        pharetra maximus. re
+
+                    </p>
+                </div>
+                <!-- col-xs-12 -->
+                <div class="wow zoomIn col-xs-6 col-sm-6 col-md-6">
+                    <form name="contactForm" id='contact_form' method="post" action='php/email.php'>
+                        <div class="form-inline">
+                            <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Nom">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder="Adresse mail">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="text" class="form-control" name="subject" id="exampleInputSubject" placeholder="Sujet">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <textarea class="form-control" name="message" rows="3" id="exampleInputMessage" placeholder="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <div id='mail_success' class='success' style="display:none;">Your message has been sent successfully.
+                            </div>
+                            <!-- success message -->
+                            <div id='mail_fail' class='error' style="display:none;"> Sorry, error occured this time sending your message.
+                            </div>
+                            <!-- error message -->
+                        </div>
+                        <div class="form-group col-sm-12 text-center" id='submit'>
+                            <!-- <input type="submit" id='send_message' class="btn  btn-lg costom-btn" value="Envoyer">   -->
+                            <button class="btn btn-lg costom-btn" id="button_contact"> Envoyer
+                                <i id="i-button" class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.col-xs-12 .col-sm-offset-2 .col-sm-8 -->
+                <div class="col-xs-6">
+                    <!-- <div class="contact-or">
+            <p>Ou</p>
+          </div> -->
+                    <!-- /.contact-or -->
+                    <div class="icon-text">
+                        <span>Trouvez Nous Sur</span>
+                    </div>
+                    <!-- /.icon-text -->
+                    <div class="icon-holder">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.icon-holder -->
+                </div>
+                <!-- /.col-xs-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- get in touch -->
+
+    <!-- footer -->
+    <!-- <section class="app">
+  <div class="water">24</div>
+</section>
+ -->
+    <section>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="wow zoomIn col-xs-12">
+                        <p>© 2018 Tous droits réservés.
+                            <span>CMA</span> développé par
+                            <a href="https://www.linkedin.com/in/aymen-mohsni/">Aymen Mohsni</a>
+                        </p>
+                        <div class="backtop pull-right">
+                            <a href="#header_img" class="backToTop">
+                                <i class="fa fa-angle-up back-to-top"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.backtop -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.creditwrapper -->
+    </section>
+
+    </section>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mmenu.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="js/medailles.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 770) {
+                $('.navbar-default').addClass('navbar-fixed-top');
+            } else {
+                $('.navbar-default').removeClass('navbar-fixed-top');
+            }
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
